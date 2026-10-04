@@ -9,6 +9,8 @@ npm run build    # type-check + production build into dist/
 npm run lint
 ```
 
+Live at https://ezequielballesteros95.github.io/MoneyApp/. GitHub Actions builds and deploys it to GitHub Pages on every push to `main`. The build uses relative asset paths (`base: './'`), and the web manifest plus icons in `public/` let it be added to a phone's home screen as a standalone app.
+
 ## Structure
 
 - `src/state.ts`: state shape, defaults, keypad editing and `localStorage` persistence
